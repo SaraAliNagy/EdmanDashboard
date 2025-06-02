@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edman</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo-icon.ico">
+
+    <!-- Bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- google fonts -->
+
+    <!-- Tajwal Dont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Cairo Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="./css/edman-style.css">
+</head>
+
+<body>
+   
+    <div class="row">
+         <!-- sidebar -->
+        <div class="col-md-3 col-lg-2 px-4 position-fixed h-100 bg-white shadow-sm sidebar" id="sidebar">
+            <img class="logo mx-2" src="./images/dark-logo.png" alt="">
+            <div class="list-group rounded-0 ">
+                <a href="#"
+                    class="py-3 list-group-item list-group-item-action border-0 d-flex py-4 align-items-center justify-content-end">
+                    <span class="mx-2">الإحصائيات</span>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6645 15.4287H10.716V19.3258H12.6645V15.4287Z" fill="#C3CED2" />
+                        <path d="M16.5615 14.4545H14.613V19.3258H16.5615V14.4545Z" fill="#C3CED2" />
+                        <path d="M8.76745 10.5574H6.81892V19.3258H8.76745V10.5574Z" fill="#C3CED2" />
+                        <path
+                            d="M18.8643 4.08554H16.473V3.32005C16.473 2.914 16.305 2.52459 16.006 2.23748C15.7071 1.95036 15.3015 1.78906 14.8787 1.78906H8.50174C8.07892 1.78906 7.67342 1.95036 7.37444 2.23748C7.07546 2.52459 6.90749 2.914 6.90749 3.32005V4.08554H4.51612C4.0933 4.08554 3.6878 4.24684 3.38882 4.53395C3.08984 4.82107 2.92188 5.21048 2.92188 5.61652L2.92187 21.6918C2.92188 22.0979 3.08984 22.4873 3.38882 22.7744C3.6878 23.0615 4.0933 23.2228 4.51612 23.2228H18.8643C19.2872 23.2228 19.6927 23.0615 19.9916 22.7744C20.2906 22.4873 20.4586 22.0979 20.4586 21.6918V5.61652C20.4586 5.21048 20.2906 4.82107 19.9916 4.53395C19.6927 4.24684 19.2872 4.08554 18.8643 4.08554ZM8.50174 3.32005H14.8787V6.38201H8.50174V3.32005ZM18.8643 21.6918H4.51612V5.61652H6.90749V7.913H16.473V5.61652H18.8643V21.6918Z"
+                            fill="#C3CED2" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class=" py-3 list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-end">
+                    <span class="mx-2">الرسائل</span>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.45458 20.2215L6.93931 19.0338L6.95023 19.0254C7.25977 18.7777 7.41596 18.6527 7.59023 18.5638C7.74658 18.4839 7.91329 18.4257 8.08527 18.3904C8.27912 18.3506 8.48104 18.3506 8.88638 18.3506H17.344C18.4331 18.3506 18.9783 18.3506 19.3947 18.1384C19.7613 17.9516 20.0596 17.6532 20.2464 17.2866C20.4586 16.8702 20.4586 16.3256 20.4586 15.2365V7.82557C20.4586 6.73642 20.4586 6.19104 20.2464 5.77464C20.0596 5.40799 19.7607 5.11012 19.3941 4.92332C18.9773 4.71094 18.4324 4.71094 17.3411 4.71094H6.03971C4.94843 4.71094 4.40238 4.71094 3.98557 4.92332C3.61893 5.11012 3.32106 5.40799 3.13425 5.77464C2.92187 6.19145 2.92188 6.73749 2.92188 7.82877L2.92187 19.0045C2.92187 20.0428 2.92188 20.5618 3.13471 20.8285C3.31981 21.0603 3.60039 21.1953 3.89709 21.195C4.23825 21.1946 4.64382 20.8701 5.45458 20.2215Z"
+                            stroke="#C3CED2" stroke-width="1.94852" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </a>
+                <a href="#"
+                    class="py-3 list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-end">
+                    <span class="mx-2">الدعم الفني</span>
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.5944 14.3056L16.6306 17.4334M8.1566 14.3056L5.12047 17.4334M5.12047 5.57578L8.1566 8.70357M16.6306 5.57578L13.5944 8.70357M14.5008 11.5046C14.5008 13.5672 12.8777 15.2392 10.8755 15.2392C8.87336 15.2392 7.25029 13.5672 7.25029 11.5046C7.25029 9.44197 8.87336 7.7699 10.8755 7.7699C12.8777 7.7699 14.5008 9.44197 14.5008 11.5046ZM19.0323 11.5046C19.0323 16.1454 15.3804 19.9076 10.8755 19.9076C6.37066 19.9076 2.71875 16.1454 2.71875 11.5046C2.71875 6.86372 6.37066 3.10156 10.8755 3.10156C15.3804 3.10156 19.0323 6.86372 19.0323 11.5046Z"
+                            stroke="#C3CED2" stroke-width="1.94852" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </a>
+                <a href="#"
+                    class="py-3 list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-end">
+                    <span class="mx-2">الإعدادات</span>
+                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_473_821)">
+                            <path
+                                d="M10.9847 4.73255C11.4379 2.8079 14.0956 2.8079 14.5488 4.73255C14.6168 5.02169 14.7501 5.2902 14.9379 5.51623C15.1257 5.74225 15.3626 5.91941 15.6294 6.03328C15.8962 6.14715 16.1853 6.19451 16.4732 6.17152C16.7612 6.14852 17.0397 6.05581 17.2863 5.90094C18.9279 4.87066 20.8079 6.80627 19.8078 8.49856C19.6577 8.75247 19.5678 9.03928 19.5456 9.33569C19.5233 9.6321 19.5692 9.92975 19.6796 10.2044C19.79 10.4791 19.9618 10.7231 20.181 10.9165C20.4001 11.1099 20.6605 11.2473 20.9409 11.3176C22.8091 11.7845 22.8091 14.5224 20.9409 14.9893C20.6602 15.0594 20.3996 15.1967 20.1802 15.3902C19.9608 15.5836 19.7888 15.8277 19.6783 16.1025C19.5677 16.3774 19.5218 16.6752 19.5441 16.9719C19.5664 17.2685 19.6564 17.5555 19.8067 17.8095C20.8068 19.5007 18.9279 21.4374 17.2852 20.4071C17.0388 20.2524 16.7604 20.1599 16.4726 20.1369C16.1849 20.114 15.896 20.1613 15.6294 20.275C15.3627 20.3888 15.1259 20.5657 14.9382 20.7915C14.7504 21.0173 14.617 21.2855 14.5488 21.5744C14.0956 23.499 11.4379 23.499 10.9847 21.5744C10.9167 21.2852 10.7833 21.0167 10.5956 20.7907C10.4078 20.5647 10.1709 20.3875 9.90409 20.2737C9.63729 20.1598 9.34817 20.1124 9.06025 20.1354C8.77233 20.1584 8.49375 20.2511 8.24718 20.406C6.60555 21.4363 4.72559 19.5007 5.72568 17.8084C5.8758 17.5545 5.96565 17.2677 5.98792 16.9712C6.01019 16.6748 5.96426 16.3772 5.85385 16.1025C5.74345 15.8278 5.57169 15.5839 5.35253 15.3904C5.13338 15.197 4.87301 15.0596 4.5926 14.9893C2.72434 14.5224 2.72434 11.7845 4.5926 11.3176C4.87326 11.2475 5.1339 11.1102 5.3533 10.9168C5.57271 10.7233 5.74467 10.4792 5.85521 10.2044C5.96574 9.92954 6.01172 9.63169 5.98939 9.33508C5.96707 9.03847 5.87708 8.75148 5.72674 8.49747C4.72665 6.80627 6.60555 4.86956 8.24825 5.89984C9.31217 6.56624 10.691 5.97656 10.9847 4.73255Z"
+                                stroke="#C3CED2" stroke-width="2.32104" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M12.7667 16.4416C14.5295 16.4416 15.9585 14.9695 15.9585 13.1535C15.9585 11.3375 14.5295 9.86533 12.7667 9.86533C11.004 9.86533 9.57496 11.3375 9.57496 13.1535C9.57496 14.9695 11.004 16.4416 12.7667 16.4416Z"
+                                stroke="#C3CED2" stroke-width="2.32104" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_473_821">
+                                <rect width="25.5342" height="26.3051" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </a>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10 ml-md-auto px-0">
+            <!-- NAV -->
+            <nav class="w-100 d-flex align-items-center px-4 py-4 mb-4">
+                <h6 class="fw-bold mx-2">أحمد خالد</h6>
+                <img src="./images/user.png" alt="">
+                <button type="button" class="icon-button mx-2">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <form class="search">
+                    <input class="search" type="search" placeholder="Search" />
+                </form>
+            </nav>
+
+            <div class="content">
+                <div class="row f-cards mb-5 d-flex justify-content-center">
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card  border-0">
+                            <div class="card-body">
+                                <div class="row d-flex p-3 ">
+                                    <div class="col-auto">
+                                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                                    </div>
+                                    <div class="col mx-5 ms-0">
+                                        <span class="h6 mb-2">الفواتير</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card  border-0">
+                            <div class="card-body">
+                                <div class="row d-flex p-3 ">
+                                    <div class="col-auto">
+                                        <i class="fa-solid fa-truck-fast" style="font-size: 45px;"></i>
+                                    </div>
+                                    <div class="col mx-5 ms-0">
+                                        <span class="h6 mb-2">الشحنات</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card  border-0">
+                            <div class="card-body">
+                                <div class="row d-flex p-3 ">
+                                    <div class="col-auto">
+                                        <i class="fa-solid fa-user-large"></i>
+                                    </div>
+                                    <div class="col mx-5 ms-0">
+                                        <span class="h6 mb-2">الحساب</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row sec-cards d-flex justify-content-center g-6 mb-5">
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card border-0">
+                            <div class="card-body p-3">
+                                <div class="row ">
+                                    <div class="col ">
+                                        <span class="h6 mb-2 d-flex justify-content-end"> عدد المنتجات المباعة</span>
+                                    </div>
+                                </div>
+                                <div class="report mt-2 mb-0 d-flex justify-content-end">
+                                    <span class="text-nowrap  text-muted">86</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card border-0">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-end">
+                                        <span class="h6 mb-2 ms-4"> مبيعات اليوم</span>
+                                    </div>
+                                </div>
+                                <div class="report mt-2 mb-0 d-flex justify-content-evenly">
+                                    <span class="badge badge-pill text-danger">
+                                        -2,5%
+                                    </span>
+                                    <span>200.65 SR</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card border-0">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-end">
+                                        <span class="h6 mb-2 ms-4"> اجمالي المبيعات</span>
+                                    </div>
+                                </div>
+                                <div class="report mt-2 mb-0 d-flex justify-content-evenly">
+                                    <span class="badge badge-pill text-success">
+                                        +3,4%
+                                    </span>
+                                    <span>5200.65 SR </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="statistic d-flex flex-column flex-md-row justify-content-evenly align-items-center my-3">
+                    <div class="card1 m-2">
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <ul class="d-flex mb-5">
+                                    <li><a href="#">Y</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">W</a></li>
+                                    <li><a href="#">D</a></li>
+                                </ul>
+                                <div class="mb-5">
+                                    <h5>ملخص المبيعات</h5>
+                                    <div class="d-flex justify-content-evenly align-items-center ">
+                                        <p>مقارنة بالشهر السابق</p>
+                                        <span class=" m-2 badge badge-pill text-success">
+                                            3,4% +
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                    </div>
+                    <div class="card2 m-2">
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <ul class="d-flex mb-5">
+                                    <li><a href="#">سنة</a></li>
+                                    <li><a href="#">شهر</a></li>
+                                    <li><a href="#">أسبوع</a></li>
+                                    <li><a href="#">يوم</a></li>
+                                </ul>
+                                <div class="mb-5">
+                                    <h5>اجمالي المبيعات</h5>
+                                    <h2>5200.65 SR </h2>
+                                    <div class="d-flex justify-content-evenly align-items-center ">
+                                        <p>مقارنة بالشهر السابق</p>
+                                        <span class=" m-2 badge badge-pill text-success">
+                                            3,4% +
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOOTER -->
+                <footer class="p-4 mb-0">
+                    <div>
+                        <h6 class="text-center">Copyright © 2024 by Edman. All Rights Reserved.</h6>
+                    </div>
+                </footer>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Script links -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./js/chartJs.js"></script>
+</body>
+
+</html>
